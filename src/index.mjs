@@ -7,7 +7,19 @@ const onClickAdd = () => {
 
   // li生成
   const li = document.createElement("li");
-  console.log(li);
+
+  // div生成
+  const div = document.createElement("div");
+  div.className = "list-row";
+
+  // p生成
+  const p = document.createElement("p");
+  p.className = "todo-item";
+  p.innerText = inputText;
+
+  div.appendChild(p);
+
+  console.log(div);
 };
 
 document.getElementById("add-button").addEventListener("click", onClickAdd);
